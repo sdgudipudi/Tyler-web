@@ -1,0 +1,258 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "utf-8"
+  },
+  "applications": {
+    "group": [
+      {
+        "application": [
+          {
+            "appName": "Odyssey Assistant",
+            "primary": "true",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Client Payment Devices",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Mobile Devices",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Jury",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Biometrics",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Batch Scan",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "application": [
+          {
+            "appName": "SessionWorks",
+            "primary": "true",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Judge Edition",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "Clerk Edition",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "appName": "SessionWorks Services",
+            "primary": "false",
+            "description": "This is an advanced technique, typically used only when creating libraries of reusable bindings. It’s not something you’ll normally need to do when building applications with Knockout.",
+            "downloadPath": "setup.exe",
+            "requirements": {
+              "component": [
+                {
+                  "name": "Operating System",
+                  "requirement": [
+                    "Windows 7",
+                    "Windows 8"
+                  ]
+                },
+                {
+                  "name": "Hardware",
+                  "requirement": [
+                    "mouse",
+                    "keyboard"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

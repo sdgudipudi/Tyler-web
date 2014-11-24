@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/knockout.min.js"></script>
+  <script type="text/javascript" src="js/vendor/knockout.mapping.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+	
+<header>
+	<div class="header-inner">
+		<img src="images/logo.png" alt"Tyler"/>
+	</div>
+</header>
+<div class="main">
+	<div class="main-content">	
+		<div data-bind="foreach: { data: groups, as: 'application' }">
+			<div  class="application-wrapper" >
+		   <div class="primary">
+			   		<div data-bind="template: { name: 'item-template', data: application.primary }" ></div>
+			</div>
+			<div data-bind="foreach:{ data: application.columns, as: 'items' }" class="col-wrapper">
+			   <div data-bind="css: 'col' + $index()" >
+				   <div data-bind="foreach:{ data: items, as: 'item' }" >
+				   		<div data-bind="template: { name: 'item-template', data: item }" class="sub-item"></div>
+				   </div>
+			   </div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<div class="footer-inner">
+		Copyright © 2002,Tyler Corporation. All Rights Reserved.
+	</div>
+</footer>
+
+<script type="text/html" id="item-template">
+	<div class="item-header">
+		<h3 data-bind="text: appName"></h3>
+		<a class="button"  data-bind="attr:{href: downloadPath}">Download</a>
+	</div>
+	<ul class="tabs">
+	    <li> 
+	        <a  data-bind="css: {selected: selectedTab() == 1},click: selectedTab.bind($parent, 1)" class="tab1">Description</a>
+	    </li>
+	    <li><a>|</a></li>
+	    <li>
+	         <a data-bind="css: {selected: selectedTab() == 2},click: selectedTab.bind($parent, 2)"  class="tab2" >System Requirements</a>
+	    </li>
+	   
+	</ul>
+	<ul class="tabs-content">
+		 <li>
+	    <div data-bind="visible:selectedTab() == 1" class="tab-content1">
+	          <p data-bind="text: description"></p>
+	        </div>
+	     </li><li>
+	        <div data-bind="visible:selectedTab() == 2" class="tab-content2">
+	        	<table>
+	        		<thead>
+	        			<tr>
+	        				<th>
+	        					REQUIREMENT TYPE
+	        				</th>
+	        				<th>
+	        					SUPPORTED
+	        				</th>
+	        			</tr>
+	        		</thead>
+	        		<tbody>
+	        			<!--ko foreach: { data: requirements.component, as: 'component' } -->
+	        			<tr>
+	        				<td data-bind="text:name"></td>
+	        				<td>
+	        					
+	        			<!--ko foreach: component.requirement-->
+	        					<div data-bind="text:$data"></div>
+	        					<!-- /ko -->
+	        				</td>
+	        			</tr>
+	        			 <!-- /ko -->
+	        		</tbody>
+	        	</table>
+	        </div></li>
+	</ul>
+	<br style="clear: both;" />
+</script>
+</body>
+</html>
