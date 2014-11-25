@@ -154,9 +154,9 @@ body {
 
 .primary .item-header .button:hover { background-color: #a1ab4d; border-color: #939c51; }
 
-div.application-wrapper:last-child .primary .item-header .button,
+/*div.application-wrapper:last-child .primary .item-header .button,
 .application-wrapper:last-child .primary .tabs,
-.application-wrapper:last-child .primary .tabs-content { display: none }
+.application-wrapper:last-child .primary .tabs-content { display: none }*/
 
 .col-wrapper p,
 .col-wrapper table tbody {

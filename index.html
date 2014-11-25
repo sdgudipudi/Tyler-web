@@ -46,9 +46,9 @@
 <script type="text/html" id="item-template">
 	<div class="item-header">
 		<h3 data-bind="text: appName"></h3>
-		<a class="button"  data-bind="attr:{href: downloadPath}">Download</a>
+		<a class="button"  data-bind="visible:downloadPath ,attr:{href: downloadPath}">Download</a>
 	</div>
-	<ul class="tabs">
+	<ul class="tabs" data-bind="visible:description || requirements.component.length">
 	    <li> 
 	        <a  data-bind="css: {selected: selectedTab() == 1},click: selectedTab.bind($parent, 1)" class="tab1">Description</a>
 	    </li>
@@ -59,11 +59,12 @@
 	   
 	</ul>
 	<ul class="tabs-content">
-		 <li>
+		 <li data-bind="visible:description">
 	    <div data-bind="visible:selectedTab() == 1" class="tab-content1">
 	          <p data-bind="text: description"></p>
 	        </div>
-	     </li><li>
+	     </li>
+	     <li data-bind="visible:requirements.component.length">
 	        <div data-bind="visible:selectedTab() == 2" class="tab-content2">
 	        	<table>
 	        		<thead>
@@ -79,7 +80,7 @@
 	        		<tbody>
 	        			<!--ko foreach: { data: requirements.component, as: 'component' } -->
 	        			<tr>
-	        				<td data-bind="text:name"></td>
+	        				<td data-bind="text:name" valign="top"></td>
 	        				<td>
 	        					
 	        			<!--ko foreach: component.requirement-->
