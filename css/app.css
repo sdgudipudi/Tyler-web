@@ -1,3 +1,16 @@
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+.body-inner{
+	min-height:100%;
+	position:relative;
+}
 input:focus,
 select:focus,
 textarea:focus,
@@ -19,6 +32,9 @@ footer {
     font-size: 10px;
     clear: both;
     padding:16px;
+  	width:100%;
+	position:absolute;
+	bottom:0;
 }
 
 .footer-inner{
@@ -38,10 +54,11 @@ body {
 .main {
     margin: 0 auto;
     width: 1024px;
-    min-height: 1000px;
+    min-height: 100%;   
+	overflow:hidden;
 }
 
-.main-content { margin-top: 20px }
+.main-content { margin-top: 20px;margin-bottom:80px; }
 
 .application-wrapper {
     border-top: 5px solid #939c51;
